@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+
+.red {
+    background-color: rgb(238, 77, 77);
+}
+
+.blue {
+    background-color: rgb(77, 77, 238);
+}
+
+.green {
+    background-color: rgb(77, 238, 77);
+}
+
+.yellow {
+    background-color: rgb(238, 238, 77);
+}
+
+.purple {
+    background-color: rgb(238, 77, 238);
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    
+    min-height: 100vh;
+
+    background-color: #f5f5f5;
+}
+
+.vertical-snappy-container {
+padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+
+    align-items: center;
+
+    width: 350px;
+    height: 200px;
+
+    background-color: rgb(128, 193, 247);
+
+    scroll-snap-type: x mandatory;
+
+    overflow-x: auto;
+}
+
+.snappy-child {
+    min-width: 300px;
+    min-height: 200px;
+
+    outline: 1px solid black;
+
+    scroll-snap-align: center;
+
+    
+}
